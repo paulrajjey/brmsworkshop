@@ -1,0 +1,12 @@
+import java.lang.Number;
+import redhat.brmsworkshop.lab1.Driver;
+import redhat.brmsworkshop.lab1.Quote;
+
+rule "Eligibility Rule 2"
+	dialect "mvel"
+	when
+		Driver( city == "Dallas" , zipCode == "54321" )
+		quote : Quote( )
+	then
+		quote.setEligibility( "No" );
+end

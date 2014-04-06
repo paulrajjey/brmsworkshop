@@ -5,7 +5,6 @@
   <groupId>redhat.brmsworkshop.lab1</groupId>
   <artifactId>lab1</artifactId>
   <version>1.0</version>
-  <packaging>kjar</packaging>
   <name>lab1</name>
   <repositories>
     <repository>
@@ -14,14 +13,4 @@
       <url>http://localhost:8080/business-central/maven2/</url>
     </repository>
   </repositories>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-maven-plugin</artifactId>
-        <version>6.0.2-redhat-6</version>
-        <extensions>true</extensions>
-      </plugin>
-    </plugins>
-  </build>
 </project>
